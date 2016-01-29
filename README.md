@@ -1,12 +1,12 @@
-# Laravel MultiAuth
+# Laravel MultiColumnAuth
 Ever felt like you need to allow both a `username` and `email` field? Then you're in luck!  
-Puz MultiAuth enables you to allow your users to use whatever userfield they want to when they log in!
+Puz MultiColumnAuth enables you to allow your users to use whatever userfield they want to when they log in!
 
 # Installation
-    composer require puz/multiauth
+    composer require puz/multicolumnauth
 
 You will need to update your `config/app.php` by adding the service provider to your application.  
-Add this under the provider section: `Puz\MultiAuth\ServiceProvider::class`
+Add this under the provider section: `Puz\MultiColumnAuth\ServiceProvider::class`
 
 To configure your fields and columns you'll need to add my configuration files. Simply do this by running the artisan command `php artisan vendor:publish`
 
@@ -17,7 +17,7 @@ In short, there are two available trais:
 
 # How to
 **Select which columns I can use for login**  
-In your newly created config file from `php artisan vendor:publish` located in `config/puz/multiauth.php`, there exists a array with a key named `columns`. This key takes an array as a value with the columns you want the users to log in with. Ex: `['username', 'email']` will check for the `username` column and then `email`.
+In your newly created config file from `php artisan vendor:publish` located in `config/puz/multicolumnauth.php`, there exists a array with a key named `columns`. This key takes an array as a value with the columns you want the users to log in with. Ex: `['username', 'email']` will check for the `username` column and then `email`.
 
 **Select name of login field**  
 In the same config file, you have a key `loginfield`. This is set to `login` as default. This means that the input field where you usually inputs a username or email, you use the name `login`, or to something you freely choose yourself.
