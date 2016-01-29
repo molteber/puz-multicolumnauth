@@ -1,0 +1,20 @@
+{
+    "name": "puz/multicolumnauth",
+    "keywords": ["laravel", "auth", "authorisation", "authenticate", "multiple", "multi", "columns", "fields", "column", "field"],
+    "description": "Makes it possible to log in with both a username and / or email",
+    "authors": [
+        {
+            "name": "Morten Mehus",
+            "email": "me@molty.no"
+        }
+    ],
+    "require": {
+        "illuminate/contracts": "^5.2",
+        "illuminate/support": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Puz\\MultiColumnAuth\\": "src/"
+        }
+    }
+}
